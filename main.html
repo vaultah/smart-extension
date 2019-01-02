@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id='connection-status'></div>
+
+        <!-- Four iframes: one for the question alone, three for combinations
+            of the question and one of the three answers -->
+        <div id='results-container'>
+            <iframe src="about:blank" id='question'></iframe>
+            <iframe src="about:blank" id='first'></iframe>
+            <iframe src="about:blank" id='second'></iframe>
+            <iframe src="about:blank" id='third'></iframe>
+        </div>
+
+    </body>
+    <script src="third-party/jquery.min.js"></script>
+    <script src="third-party/reconnecting-websocket.min.js"></script>
+    <script src="watcher.js"></script>
+</html>

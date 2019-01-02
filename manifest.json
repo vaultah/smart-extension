@@ -1,0 +1,17 @@
+{
+    "name": "Smart Extension",
+    "manifest_version": 2,
+    "version": "1.0",
+    "background": {
+        "persistent": true,
+        "scripts": ["background.js"]
+    },
+    "browser_action": {},
+    "permissions": [
+        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "*://localhost/*",
+        "*://yandex.ru/*"
+    ]
+}
